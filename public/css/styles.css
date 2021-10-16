@@ -37,6 +37,10 @@ header a {
     text-decoration: none;
 }
 
+header a:hover {
+    color: #333333;
+}
+
 .portrait {
     width: 250px;
 }
