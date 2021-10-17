@@ -41,6 +41,15 @@ header a:hover {
     color: #333333;
 }
 
+p a {
+    color: #888888;
+    text-decoration: none;
+}
+
+p a:hover{
+    color: #333333
+}
+
 .portrait {
     width: 250px;
 }
