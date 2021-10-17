@@ -38,7 +38,6 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        msg: 'Get help on ' + <a href="https://github.com/drfl-dev/weather-app">github</a>,
         name: 'Dylan Lauzon'
     })
 })
