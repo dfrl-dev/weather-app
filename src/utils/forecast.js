@@ -1,10 +1,12 @@
 const request = require('request')
 
-const forecast = (latitude, longitude, callback ) => {    
+const forecast = (latitude, longitude, units, callback ) => {    
     const url = 'http://api.weatherstack.com/current?access_key=d7650cb74058da2599ac5d95c38e9a4e&query=' 
-        + encodeURIComponent(latitude) + ',' + encodeURIComponent(longitude) + '&units=f'
+        + encodeURIComponent(latitude) + ',' + encodeURIComponent(longitude) + +'&units=' + encodeURIComponent(units)
+
 
     request({url, json: true}, (error, {body}) => {
+
         if(error) {
             callback('Cannot reach weather services', undefined)
         } else if(body.error){
